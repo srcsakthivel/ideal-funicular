@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: cust-ss-pipeline-az
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 8084
+    name: http
+    protocol: TCP
+    targetPort: 8000
+  selector:
+    app: streamset-custom-pipeline
