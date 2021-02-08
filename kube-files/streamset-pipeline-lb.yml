@@ -10,4 +10,4 @@ spec:
     protocol: TCP
     targetPort: 8000
   selector:
-    app: streamset-custom-pipeline
+    app: streamset-with-pipeline
